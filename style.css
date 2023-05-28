@@ -1,0 +1,347 @@
+@font-face {
+  font-family: "nanumsquare";
+  src: local("NanumSquareR"), url("/fonts/NanumSquareR.ttf") format("truetype");
+}
+body {
+  font-family: "nanumsquare";
+  background-color: #fdf7f2;
+}
+
+#top_image {
+  position: absolute;
+  left: 0px;
+  top: 150px;
+  z-index: -1;
+  width: 100%;
+  height: 400px;
+}
+
+#top_image img {
+  height: 100%;
+  width: 100%;
+}
+.Zzim-go {
+  position: absolute;
+  right: 25px;
+  top: 40px;
+}
+
+.Zzim-go img {
+  height: 50px;
+  width: 50px;
+}
+
+#main {
+  width: 100%;
+  height: 5px;
+  background-color: #fdf7f2;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+#main img {
+  margin: 7px;
+}
+
+#toppart {
+  width: 100%;
+  height: 550px;
+}
+
+#midpart {
+  position: absolute;
+  width: 100%;
+  right: 150px;
+  top: 250px;
+  line-height: 180%;
+  text-align: center;
+  background-color: rgba(242, 242, 233, 0.3);
+  padding: 5px;
+}
+
+.menu-dis {
+  text-align: center;
+}
+.menu_select {
+  font-family: "nanumsquare";
+  display: inline-block;
+  width: 180px;
+  height: 40px;
+  background-color: #e6dccf;
+  box-shadow: 0 4px 16px rgba(166, 166, 159, 0.3);
+  font-size: 32px;
+  font-weight: bold;
+  border-radius: 10px;
+  color: black;
+  padding: 15px;
+  margin: 30px 50px 15px 50px;
+  text-align: center;
+  text-decoration: none;
+}
+
+.menu {
+  font-family: "nanumsquare";
+  display: inline-block;
+  width: 180px;
+  height: 40px;
+  background-color: #fef6e4;
+  box-shadow: 0 4px 16px rgba(204, 204, 196, 0.3);
+  font-size: 32px;
+  font-weight: bold;
+  border-radius: 10px;
+  color: black;
+  padding: 15px;
+  margin: 15px 50px 15px 50px;
+  text-align: center;
+  text-decoration: none;
+}
+
+.menu .menu_select :focus {
+  outline: 0;
+}
+.menu:hover {
+  background-color: rgba(204, 204, 196, 0.9);
+}
+
+.menu_select:hover {
+  background-color: rgba(166, 166, 159, 0.9);
+}
+
+/*masonry layout*/
+.Looks {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.Looks__container {
+  max-width: 79.375rem;
+  margin: 0 auto;
+  padding-left: 0.9375rem;
+  padding-right: 0.9375rem;
+}
+
+.Looks__title {
+  font-size: 1.5625rem;
+  margin-bottom: 2.8125rem;
+}
+
+.Looks__filter {
+  margin-bottom: 1rem;
+  margin-right: 1rem;
+}
+
+.filter-Looks {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  column-gap: 1.5625rem;
+  row-gap: 0.3125rem;
+  flex-wrap: wrap;
+}
+
+.filter-Looks__item {
+  font-family: "nanumsquare";
+  font-size: 1.25rem;
+  line-height: 2;
+  border: none;
+  background-color: transparent;
+  color: #c4c4c4;
+  transition: all 0.3s;
+}
+
+.filter-Looks__item:hover,
+.filter-Looks__item.active {
+  font-family: "nanumsquare";
+  color: #495057;
+}
+
+.Looks__items {
+  margin: 0 auto;
+  transition: all 0.3s;
+}
+
+.Looks__items_zzim {
+  margin: 0 auto;
+  transition: all 0.3s;
+}
+
+.Looks__item {
+  width: 25rem;
+}
+
+.Looks__item:not(:last-child) {
+  margin-bottom: 1.25rem;
+}
+
+@media (max-width: 430px) {
+  .Looks__item {
+    width: 100%;
+  }
+
+  /*Cancel fitWidth*/
+  .Looks__items {
+    width: auto !important;
+  }
+
+  /*Cancel fitWidth*/
+  .Looks__items_zzim {
+    width: auto !important;
+  }
+}
+
+.Look__image {
+  display: block;
+  margin: bottom 1.875rem;
+  position: relative;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.Look__image:hover img {
+  transform: scale(1.03);
+}
+
+.Look__image img.init {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  object-fit: cover;
+  transition: transform 0.3s;
+}
+
+.Look__image_zzim {
+  display: block;
+  margin: bottom 1.875rem;
+  position: relative;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.Look__image_zzim:hover img {
+  transform: scale(1.03);
+}
+
+.Look__image_zzim img.init {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  object-fit: cover;
+  transition: transform 0.3s;
+}
+
+.Look__body {
+  display: grid;
+  gap: 0.9375 rem;
+}
+
+/*hover_image*/
+
+.Look__image:hover .hover_text {
+  opacity: 0.8;
+}
+
+.Look__image_zzim:hover .hover_text {
+  opacity: 0.8;
+}
+
+.hover_text {
+  font-family: "nanumsquare";
+  font-size: 1.2rem;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: black;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  color: #fff;
+  opacity: 0;
+}
+
+/*크게 보기*/
+.popup-image {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.9);
+  height: 100%;
+  width: 100%;
+  z-index: 100;
+  display: none;
+}
+
+.popup-image span {
+  position: absolute;
+  top: 0;
+  right: 10px;
+  font-size: 60px;
+  font-weight: bolder;
+  color: #fff;
+  cursor: pointer;
+  z-index: 100;
+}
+
+.popup-image img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  border-radius: 5px;
+  width: 750px;
+  object-fit: cover;
+}
+
+@media (max-width: 768px) {
+  .popup-image img {
+    width: 95%;
+  }
+}
+
+/*찜하기 버튼*/
+
+.zzim {
+  text-align: center;
+}
+.zzim_button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.25rem;
+  line-height: 2;
+  width: 100%;
+  height: 40px;
+  background-color: #e6dccf;
+  border: none;
+  border-radius: 5px;
+  color: black;
+  transition: all 0.3s;
+
+  margin: 0 auto 0 auto;
+  padding: 5px;
+}
+
+.zzim_button p {
+  font-family: "nanumsquare";
+}
+
+.zzim_button img {
+  width: 25px;
+  height: 25px;
+  object-fit: cover;
+  margin-right: 3px;
+  cursor: pointer;
+}
+
+.zzim_button :hover {
+  font-family: "nanumsquare";
+  color: #495057;
+}
