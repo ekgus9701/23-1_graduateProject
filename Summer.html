@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="style.css" />
+    <title>MyLooks</title>
+    
+
+    <meta charset="utf-8" />
+  </head>
+  <body>
+    <div id="main">
+      <a href="spring.html"><img src="img/main.png" /></a>
+      <a class="Zzim-go" href="Zzim.html"><img src="img/heart-fill.png"/></a>
+    </div>
+
+    <section>
+      <div id="toppart">
+        <div id="midpart" style="width: 500px">
+          <h3>
+            내게 잘 어울리는<br />예쁜 코디가 궁금한가요?<br />나만의 퍼스널
+            컬러에 맞는<br />다양한 코디를<br />MyLooks에서<br />찾아보세요
+          </h3>
+        </div>
+      </div>
+    
+
+      <div id="top_image">
+        <img id="introimg" border="0" />
+      </div>
+    </section>
+
+    <section>
+      <div class="menu-dis">
+        <a class="menu" href="Spring.html">Spring</a>
+        <a class="menu_select" href="Summer.html">Summer</a>
+        <a class="menu" href="Autumn.html">Autumn</a>
+        <a class="menu" href="Winter.html"> Winter</a>
+      </div>
+    </section>
+
+   
+    <section class="Looks">
+      <div class="Looks__container">
+        <div class="Looks__filter filter-Looks">
+          <button
+            data-filter="*"
+            class="filter-Looks__item active"
+            type="button"
+          >
+            Show All
+          </button>
+          <button
+            data-filter="cool"
+            class="filter-Looks__item"
+            type="button"
+          >
+            Cool
+          </button>
+          <button
+            data-filter="light"
+            class="filter-Looks__item"
+            type="button"
+          >
+          Light
+          </button>
+          <button
+            data-filter="soft"
+            class="filter-Looks__item"
+            type="button"
+          >
+          Soft
+          </button>
+        </div>
+        <div class="Looks__items">
+          
+            
+
+          
+            
+
+        <Look data-filter="light" class="Looks__item Look">
+          <a href="#" class="Look__image" >
+            
+              <img src="img/img25.jpg" alt="Image"/>
+              <div class="hover_text" >
+                크게 보기
+              </div>  
+          </a>
+          <div class="zzim">
+            <button class="zzim_button" type="button"><img src="img/heart.png" onclick="toggleHeart(event,'img/img25.jpg')"></button>
+          </div>
+        
+        </Look>
+        <Look data-filter="cool" class="Looks__item Look">
+          <a href="#" class="Look__image">
+            
+              <img src="img/img20.jpg" alt="Image"/>
+              <div class="hover_text" >
+                크게 보기
+              </div>  
+          </a>
+          <div class="zzim">
+            <button class="zzim_button" type="button"><img src="img/heart.png" onclick="toggleHeart(event,'img/img20.jpg')"></button>
+          </div>
+         
+        
+        </Look>
+
+
+        <Look data-filter="light" class="Looks__item Look">
+          <a href="#" class="Look__image">
+            
+              <img src="img/img26.jpg" alt="Image"/>
+              <div class="hover_text" >
+                크게 보기
+              </div>  
+          </a>
+          <div class="zzim">
+            <button class="zzim_button" type="button"><img src="img/heart.png" onclick="toggleHeart(event,'img/img26.jpg')"></button>
+          </div>
+        
+
+        </Look>
+
+        <Look data-filter="soft" class="Looks__item Look">
+          <a href="#" class="Look__image">
+
+          <img src="img/img36.jpg" alt="Image"/>
+          <div class="hover_text" >
+          크게 보기
+          </div>  
+          </a>
+          <div class="zzim">
+          <button class="zzim_button" type="button"><img src="img/heart.png" onclick="toggleHeart(event,'img/img36.jpg')"></button>
+          </div>
+
+        </Look>
+
+        <Look data-filter="light" class="Looks__item Look">
+          <a href="#" class="Look__image">
+            
+              <img src="img/img27.jpg" alt="Image"/>
+              <div class="hover_text" >
+                크게 보기
+              </div>  
+          </a>
+          <div class="zzim">
+            <button class="zzim_button" type="button"><img src="img/heart.png" onclick="toggleHeart(event,'img/img27.jpg')"></button>
+          </div>
+
+        </Look>
+
+        <Look data-filter="light" class="Looks__item Look">
+          <a href="#" class="Look__image">
+
+            <img src="img/img28.jpg" alt="Image"/>
+            <div class="hover_text" >
+              크게 보기
+            </div>  
+          </a>
+          <div class="zzim">
+          <button class="zzim_button" type="button"><img src="img/heart.png" onclick="toggleHeart(event,'img/img28.jpg')"></button>
+          </div>
+
+        </Look>
+
+
+        <Look data-filter="light" class="Looks__item Look">
+          <a href="#" class="Look__image">
+
+          <img src="img/img29.jpg" alt="Image"/>
+          <div class="hover_text" >
+            크게 보기
+          </div>  
+          </a>
+          <div class="zzim">
+          <button class="zzim_button" type="button"><img src="img/heart.png" onclick="toggleHeart(event,'img/img29.jpg')"></button>
+          </div>
+
+        </Look>
+
+        <Look data-filter="cool" class="Looks__item Look">
+          <a href="#" class="Look__image">
+            
+              <img src="img/img22.jpg" alt="Image"/>
+              <div class="hover_text" >
+                크게 보기
+              </div>  
+          </a>
+          <div class="zzim">
+            <button class="zzim_button" type="button"><img src="img/heart.png" onclick="toggleHeart(event,'img/img22.jpg')"></button>
+          </div>
+        
+        </Look>
+
+      
+      <Look data-filter="cool" class="Looks__item Look">
+        <a href="#" class="Look__image">
+          
+            <img src="img/img23.jpg" alt="Image"/>
+            <div class="hover_text" >
+              크게 보기
+            </div>  
+        </a>
+        <div class="zzim">
+          <button class="zzim_button" type="button"><img src="img/heart.png" onclick="toggleHeart(event,'img/img23.jpg')"></button>
+        </div>
+      
+     </Look>
+
+
+        <Look data-filter="light" class="Looks__item Look">
+          <a href="#" class="Look__image">
+
+          <img src="img/img30.jpg" alt="Image"/>
+          <div class="hover_text" >
+          크게 보기
+          </div>  
+          </a>
+          <div class="zzim">
+          <button class="zzim_button" type="button"><img src="img/heart.png" onclick="toggleHeart(event,'img/img30.jpg')"></button>
+          </div>
+
+        </Look>
+
+        <Look data-filter="soft" class="Looks__item Look">
+          <a href="#" class="Look__image" >
+            
+              <img src="img/img31.jpg" alt="Image"/>
+              <div class="hover_text" >
+                크게 보기
+              </div>  
+          </a>
+          <div class="zzim">
+            <button class="zzim_button" type="button"><img src="img/heart.png" onclick="toggleHeart(event,'img/img31.jpg')"></button>
+          </div>
+        
+        </Look>
+
+        <Look data-filter="soft" class="Looks__item Look">
+          <a href="#" class="Look__image">
+            
+              <img src="img/img32.jpg" alt="Image"/>
+              <div class="hover_text" >
+                크게 보기
+              </div>  
+          </a>
+          <div class="zzim">
+            <button class="zzim_button" type="button"><img src="img/heart.png" onclick="toggleHeart(event,'img/img32.jpg')"></button>
+          </div>
+        
+
+        </Look>
+        <Look data-filter="cool" class="Looks__item Look">
+          <a href="#" class="Look__image">
+            
+              <img src="img/img21.jpg" alt="Image"/>
+              <div class="hover_text" >
+                크게 보기
+              </div>  
+          </a>
+          <div class="zzim">
+            <button class="zzim_button" type="button"><img src="img/heart.png" onclick="toggleHeart(event,'img/img21.jpg')"></button>
+          </div>
+          
+        
+        </Look>
+
+     
+
+  
+        <Look data-filter="cool" class="Looks__item Look">
+          <a href="#" class="Look__image">
+            
+              <img src="img/img24.jpg" alt="Image"/>
+              <div class="hover_text" >
+                크게 보기
+              </div>  
+          </a>
+          <div class="zzim">
+            <button class="zzim_button" type="button"><img src="img/heart.png" onclick="toggleHeart(event,'img/img24.jpg')"></button>
+          </div>
+        
+        </Look>
+
+        <Look data-filter="soft" class="Looks__item Look">
+          <a href="#" class="Look__image">
+            
+              <img src="img/img33.jpg" alt="Image"/>
+              <div class="hover_text" >
+                크게 보기
+              </div>  
+          </a>
+          <div class="zzim">
+            <button class="zzim_button" type="button"><img src="img/heart.png" onclick="toggleHeart(event,'img/img33.jpg')"></button>
+          </div>
+
+        </Look>
+
+        <Look data-filter="soft" class="Looks__item Look">
+          <a href="#" class="Look__image">
+
+            <img src="img/img34.jpg" alt="Image"/>
+            <div class="hover_text" >
+              크게 보기
+            </div>  
+          </a>
+          <div class="zzim">
+          <button class="zzim_button" type="button"><img src="img/heart.png" onclick="toggleHeart(event,'img/img34.jpg')"></button>
+          </div>
+
+        </Look>
+
+        <Look data-filter="cool" class="Looks__item Look">
+          <a href="#" class="Look__image" >
+            
+              <img src="img/img19.jpg" alt="Image"/>
+              <div class="hover_text" >
+                크게 보기
+              </div>  
+          </a>
+          <div class="zzim">
+            <button class="zzim_button" type="button"><img src="img/heart.png" onclick="toggleHeart(event,'img/img19.jpg')"></button>
+          </div>
+        
+      </Look>
+
+
+        <Look data-filter="soft" class="Looks__item Look">
+          <a href="#" class="Look__image">
+
+          <img src="img/img35.jpg" alt="Image"/>
+          <div class="hover_text" >
+            크게 보기
+          </div>  
+          </a>
+          <div class="zzim">
+          <button class="zzim_button" type="button"><img src="img/heart.png" onclick="toggleHeart(event,'img/img35.jpg')"></button>
+          </div>
+
+        </Look>
+
+
+       
+
+          
+        </div>
+
+        <div class="popup-image">
+          <span>&times;</span>
+          <img src="img/img1.jpg" alt="">
+        </div>
+
+      </div>
+
+    </section>
+  </main>
+</div>
+<script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
+<script src="script.js"></script>
+  </body>
+</html>
