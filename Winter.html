@@ -38,10 +38,16 @@
       </div>
     </section>
 
+    <div class="search-container">
+      <input type="search" class="search-input" placeholder="찾고 싶은 색상을 검색하세요">
+      <button class="search"> Search</button>
+    </div>
+
    
     <section class="Looks">
       <div class="Looks__container">
         <div class="Looks__filter filter-Looks">
+          <div class="right">
           <button
             data-filter="*"
             class="filter-Looks__item active"
@@ -70,34 +76,78 @@
           >
             Clear
           </button>
+          </div>
+          <div class="right">
+            <button
+              data-filter="dress"
+              class="filter-Looks__item"
+              type="button"
+            >
+              Dress
+            </button>
+            <button
+              data-filter="shorts"
+              class="filter-Looks__item"
+              type="button"
+            >
+              Shorts
+            </button>
+            <button
+              data-filter="skirt"
+              class="filter-Looks__item"
+              type="button"
+            >
+              Skirt
+            </button>
+  
+            <button
+              data-filter="pants"
+              class="filter-Looks__item"
+              type="button"
+            >
+              Pants
+            </button>
+            </div>
         </div>
+
+        <div class="search-container">
+          <div id="search-result">총 <span id="numbers">18</span>개의 코디가 검색되었습니다.</div>
+        </div>
+
+
         <div class="Looks__items">
           
 
-        <Look data-filter="clear" class="Looks__item Look">
+        <Look data-filter="clear pants" class="Looks__item Look">
           <a href="#" class="Look__image">
 
             <img src="img/img70.jpg" alt="Image"/>
             <div class="hover_text" >
               크게 보기
             </div>  
-          </a>
+          </a><div class="Looks_text">
+            Blue, White
+          </div>
           <div class="zzim">
           <button class="zzim_button" type="button"><img src="img/heart.png" onclick="toggleHeart(event,'img/img70.jpg')"></button>
+          <button class="down_button" type="button" onclick="downloadImage('img/img70.jpg')"><img src="img/download.png"></button>
           </div>
 
         </Look>
 
-        <Look data-filter="clear" class="Looks__item Look">
+        <Look data-filter="clear dress" class="Looks__item Look">
           <a href="#" class="Look__image" >
             
               <img src="img/img67.jpg" alt="Image"/>
               <div class="hover_text" >
                 크게 보기
               </div>  
-          </a>
+          </a><div class="Looks_text">
+            Red, Black
+          </div>
           <div class="zzim">
             <button class="zzim_button" type="button"><img src="img/heart.png" onclick="toggleHeart(event,'img/img67.jpg')"></button>
+            <button class="down_button" type="button" onclick="downloadImage('img/img67.jpg')"><img src="img/download.png"></button>
           </div>
         
         </Look>
@@ -105,116 +155,140 @@
        
 
 
-        <Look data-filter="clear" class="Looks__item Look">
+        <Look data-filter="clear shorts" class="Looks__item Look">
           <a href="#" class="Look__image">
 
           <img src="img/img71.jpg" alt="Image"/>
           <div class="hover_text" >
             크게 보기
           </div>  
-          </a>
+          </a><div class="Looks_text">
+            Pink, Blue
+          </div>
           <div class="zzim">
           <button class="zzim_button" type="button"><img src="img/heart.png" onclick="toggleHeart(event,'img/img71.jpg')"></button>
+          <button class="down_button" type="button" onclick="downloadImage('img/img71.jpg')"><img src="img/download.png"></button>
           </div>
 
         </Look>
 
-        <Look data-filter="deep" class="Looks__item Look">
+        <Look data-filter="deep pants" class="Looks__item Look">
           <a href="#" class="Look__image">
             
               <img src="img/img56.jpg" alt="Image"/>
               <div class="hover_text" >
                 크게 보기
               </div>  
-          </a>
+          </a><div class="Looks_text">
+            Black, Blue
+          </div>
           <div class="zzim">
             <button class="zzim_button" type="button"><img src="img/heart.png" onclick="toggleHeart(event,'img/img56.jpg')"></button>
+            <button class="down_button" type="button" onclick="downloadImage('img/img56.jpg')"><img src="img/download.png"></button>
           </div>
          
         
         </Look>
 
-          <Look data-filter="deep" class="Looks__item Look">
+          <Look data-filter="deep pants" class="Looks__item Look">
             <a href="#" class="Look__image">
               
                 <img src="img/img57.jpg" alt="Image"/>
                 <div class="hover_text" >
                   크게 보기
                 </div>  
-            </a>
+            </a><div class="Looks_text">
+              Green, Black
+            </div>
             <div class="zzim">
               <button class="zzim_button" type="button"><img src="img/heart.png" onclick="toggleHeart(event,'img/img57.jpg')"></button>
+              <button class="down_button" type="button" onclick="downloadImage('img/img57.jpg')"><img src="img/download.png"></button>
             </div>
             
           
           </Look>
 
-          <Look data-filter="clear" class="Looks__item Look">
+          <Look data-filter="clear pants" class="Looks__item Look">
             <a href="#" class="Look__image">
               
                 <img src="img/img68.jpg" alt="Image"/>
                 <div class="hover_text" >
                   크게 보기
                 </div>  
-            </a>
+            </a><div class="Looks_text">
+              Yellow, Blue
+            </div>
             <div class="zzim">
               <button class="zzim_button" type="button"><img src="img/heart.png" onclick="toggleHeart(event,'img/img68.jpg')"></button>
+              <button class="down_button" type="button" onclick="downloadImage('img/img68.jpg')"><img src="img/download.png"></button>
             </div>
           
   
           </Look>
 
-        <Look data-filter="deep" class="Looks__item Look">
+        <Look data-filter="deep pants" class="Looks__item Look">
           <a href="#" class="Look__image">
             
               <img src="img/img58.jpg" alt="Image"/>
               <div class="hover_text" >
                 크게 보기
               </div>  
-          </a>
+          </a><div class="Looks_text">
+            White, Indigo
+          </div>
           <div class="zzim">
             <button class="zzim_button" type="button"><img src="img/heart.png" onclick="toggleHeart(event,'img/img58.jpg')"></button>
+            <button class="down_button" type="button" onclick="downloadImage('img/img58.jpg')"><img src="img/download.png"></button>
           </div>
         
         </Look>
 
       
-        <Look data-filter="deep" class="Looks__item Look">
+        <Look data-filter="deep dress" class="Looks__item Look">
           <a href="#" class="Look__image">
             
               <img src="img/img59.jpg" alt="Image"/>
               <div class="hover_text" >
                 크게 보기
               </div>  
-          </a>
+          </a><div class="Looks_text">
+            Purple, Ivory
+          </div>
           <div class="zzim">
             <button class="zzim_button" type="button"><img src="img/heart.png" onclick="toggleHeart(event,'img/img59.jpg')"></button>
+            <button class="down_button" type="button" onclick="downloadImage('img/img59.jpg')"><img src="img/download.png"></button>
           </div>
         
         </Look>
-        <Look data-filter="clear" class="Looks__item Look">
+        <Look data-filter="clear pants" class="Looks__item Look">
           <a href="#" class="Look__image">
             
               <img src="img/img69.jpg" alt="Image"/>
               <div class="hover_text" >
                 크게 보기
               </div>  
-          </a>
+          </a><div class="Looks_text">
+            Red, Blue
+          </div>
           <div class="zzim">
             <button class="zzim_button" type="button"><img src="img/heart.png" onclick="toggleHeart(event,'img/img69.jpg')"></button>
+            <button class="down_button" type="button" onclick="downloadImage('img/img69.jpg')"><img src="img/download.png"></button>
           </div>
 
         </Look>
-        <Look data-filter="cool" class="Looks__item Look">
+        <Look data-filter="cool pants" class="Looks__item Look">
           <a href="#" class="Look__image">
             
               <img src="img/img62.jpg" alt="Image"/>
               <div class="hover_text" >
                 크게 보기
               </div>  
-          </a>
+          </a><div class="Looks_text">
+            Black, Gray
+          </div>
           <div class="zzim">
             <button class="zzim_button" type="button"><img src="img/heart.png" onclick="toggleHeart(event,'img/img62.jpg')"></button>
+            <button class="down_button" type="button" onclick="downloadImage('img/img62.jpg')"><img src="img/download.png"></button>
           </div>
         
 
@@ -223,119 +297,143 @@
         
 
 
-        <Look data-filter="clear" class="Looks__item Look">
+        <Look data-filter="clear pants" class="Looks__item Look">
           <a href="#" class="Look__image">
 
           <img src="img/img72.jpg" alt="Image"/>
           <div class="hover_text" >
           크게 보기
           </div>  
-          </a>
+          </a><div class="Looks_text">
+            Black, White
+          </div>
           <div class="zzim">
           <button class="zzim_button" type="button"><img src="img/heart.png" onclick="toggleHeart(event,'img/img72.jpg')"></button>
+          <button class="down_button" type="button" onclick="downloadImage('img/img72.jpg')"><img src="img/download.png"></button>
           </div>
 
         </Look>
 
       
-        <Look data-filter="deep" class="Looks__item Look">
+        <Look data-filter="deep skirt" class="Looks__item Look">
           <a href="#" class="Look__image">
             
               <img src="img/img60.jpg" alt="Image"/>
               <div class="hover_text" >
                 크게 보기
               </div>  
-          </a>
+          </a><div class="Looks_text">
+            Green, Black
+          </div>
           <div class="zzim">
             <button class="zzim_button" type="button"><img src="img/heart.png" onclick="toggleHeart(event,'img/img60.jpg')"></button>
+            <button class="down_button" type="button" onclick="downloadImage('img/img60.jpg')"><img src="img/download.png"></button>
           </div>
         
         </Look>
 
-        <Look data-filter="cool" class="Looks__item Look">
+        <Look data-filter="cool skirt" class="Looks__item Look">
           <a href="#" class="Look__image" >
             
               <img src="img/img61.jpg" alt="Image"/>
               <div class="hover_text" >
                 크게 보기
               </div>  
-          </a>
+          </a><div class="Looks_text">
+            Blue, Black
+          </div>
           <div class="zzim">
             <button class="zzim_button" type="button"><img src="img/heart.png" onclick="toggleHeart(event,'img/img61.jpg')"></button>
+            <button class="down_button" type="button" onclick="downloadImage('img/img61.jpg')"><img src="img/download.png"></button>
           </div>
         
         </Look>
 
        
 
-        <Look data-filter="cool" class="Looks__item Look">
+        <Look data-filter="cool pants" class="Looks__item Look">
           <a href="#" class="Look__image">
             
               <img src="img/img63.jpg" alt="Image"/>
               <div class="hover_text" >
                 크게 보기
               </div>  
-          </a>
+          </a><div class="Looks_text">
+            Black, Blue
+          </div>
           <div class="zzim">
             <button class="zzim_button" type="button"><img src="img/heart.png" onclick="toggleHeart(event,'img/img63.jpg')"></button>
+            <button class="down_button" type="button" onclick="downloadImage('img/img63.jpg')"><img src="img/download.png"></button>
           </div>
 
         </Look>
 
-        <Look data-filter="cool" class="Looks__item Look">
+        <Look data-filter="cool pants" class="Looks__item Look">
           <a href="#" class="Look__image">
 
             <img src="img/img64.jpg" alt="Image"/>
             <div class="hover_text" >
               크게 보기
             </div>  
-          </a>
+          </a><div class="Looks_text">
+            White, Blue
+          </div>
           <div class="zzim">
           <button class="zzim_button" type="button"><img src="img/heart.png" onclick="toggleHeart(event,'img/img64.jpg')"></button>
+          <button class="down_button" type="button" onclick="downloadImage('img/img64.jpg')"><img src="img/download.png"></button>
           </div>
 
         </Look>
 
 
-        <Look data-filter="cool" class="Looks__item Look">
+        <Look data-filter="cool pants" class="Looks__item Look">
           <a href="#" class="Look__image">
 
           <img src="img/img65.jpg" alt="Image"/>
           <div class="hover_text" >
             크게 보기
           </div>  
-          </a>
+          </a><div class="Looks_text">
+            Black, Gray
+          </div>
           <div class="zzim">
           <button class="zzim_button" type="button"><img src="img/heart.png" onclick="toggleHeart(event,'img/img65.jpg')"></button>
+          <button class="down_button" type="button" onclick="downloadImage('img/img65.jpg')"><img src="img/download.png"></button>
           </div>
 
         </Look>
 
         
-        <Look data-filter="deep" class="Looks__item Look">
+        <Look data-filter="deep pants" class="Looks__item Look">
           <a href="#" class="Look__image" >
             
               <img src="img/img55.jpg" alt="Image"/>
               <div class="hover_text" >
                 크게 보기
               </div>  
-          </a>
+          </a><div class="Looks_text">
+            Blue, White
+          </div>
           <div class="zzim">
             <button class="zzim_button" type="button"><img src="img/heart.png" onclick="toggleHeart(event,'img/img55.jpg')"></button>
+            <button class="down_button" type="button" onclick="downloadImage('img/img55.jpg')"><img src="img/download.png"></button>
           </div>
         
       </Look>
 
-        <Look data-filter="cool" class="Looks__item Look">
+        <Look data-filter="cool dress" class="Looks__item Look">
           <a href="#" class="Look__image">
 
           <img src="img/img66.jpg" alt="Image"/>
           <div class="hover_text" >
           크게 보기
           </div>  
-          </a>
+          </a><div class="Looks_text">
+            Purple, White
+          </div>
           <div class="zzim">
           <button class="zzim_button" type="button"><img src="img/heart.png" onclick="toggleHeart(event,'img/img66.jpg')"></button>
+          <button class="down_button" type="button" onclick="downloadImage('img/img66.jpg')"><img src="img/download.png"></button>
           </div>
 
         </Look>
